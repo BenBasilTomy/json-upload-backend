@@ -16,6 +16,7 @@ app.use(cors({
 }));
 
 
+
 const mongoUrl = 'mongodb+srv://benbasil00:foMRSel8gniVM7CJ@cluster0.oaanhbv.mongodb.net/';
 const mongoDBName = 'test';
 
