@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const app = express()
 const upload = multer({ dest: 'uploads/' });
 
-const allowedOrigins = ['https://benbasiltomy.github.io/cavili-front/',,'https://benbasiltomy.github.io', 'http://localhost:3000', 'http://localhost:3001'];
+const allowedOrigins = ['https://benbasiltomy.github.io/cavili-front/','https://benbasiltomy.github.io', 'http://localhost:3000', 'http://localhost:3001'];
 app.use(cors({
     origin: allowedOrigins
 }));
