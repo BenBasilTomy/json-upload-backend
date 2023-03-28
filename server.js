@@ -11,9 +11,11 @@ const app = express()
 const upload = multer({ dest: 'uploads/' });
 
 const allowedOrigins = ['https://benbasiltomy.github.io/cavili-front/','http://quiz.nexcode.in/cavili-front/','http://quiz.nexcode.in/','https://benbasiltomy.github.io', 'http://localhost:3000', 'http://localhost:3001'];
-app.use(cors({
-    origin: allowedOrigins
-}));
+// app.use(cors({
+//     origin: allowedOrigins
+// }));
+
+app.use(cors());
 
 
 
