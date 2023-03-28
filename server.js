@@ -10,13 +10,14 @@ const mongoose = require('mongoose');
 const app = express()
 const upload = multer({ dest: 'uploads/' });
 
+const allowedOrigins = ['https://benbasiltomy.github.io/cavili-json/',,'https://benbasiltomy.github.io', 'http://localhost:3000', 'http://localhost:3001'];
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: allowedOrigins
 }));
 
 
-const mongoUrl = 'mongodb://localhost:27017/';
-const mongoDBName = 'cavliDB';
+const mongoUrl = 'mongodb+srv://benbasil00:foMRSel8gniVM7CJ@cluster0.oaanhbv.mongodb.net/';
+const mongoDBName = 'test';
 
 
 // connect to MongoDB
